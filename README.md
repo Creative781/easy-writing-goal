@@ -62,15 +62,15 @@ Search for **Easy Writing Goal** in Obsidian Settings → Community plugins.
 
 ### Manual installation
 
-1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/Creative781/writing-goals/releases).
-2. Create a folder named `writing-goals` inside your vault’s `.obsidian/plugins/` directory.
+1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/Creative781/easy-writing-goal/releases).
+2. Create a folder named `easy-writing-goal` inside your vault’s `.obsidian/plugins/` directory.
 3. Place the downloaded files in that folder.
 4. Enable the plugin in Obsidian settings.
 
 ### BRAT (beta)
 
 1. Install the [BRAT plugin](https://github.com/TfTHacker/obsidian42-brat).
-2. Add beta plugin: `https://github.com/Creative781/writing-goals`
+2. Add beta plugin: `https://github.com/Creative781/easy-writing-goal`
 
 ## Develop
 
@@ -79,7 +79,7 @@ npm install
 npm run build
 ```
 
-Copy or symlink this folder to `.obsidian/plugins/writing-goals/` (needs `manifest.json`, `main.js`, `styles.css`).
+Copy or symlink this folder to `.obsidian/plugins/easy-writing-goal/` (needs `manifest.json`, `main.js`, `styles.css`).
 
 ## License
 
@@ -158,14 +158,14 @@ writing-project: dissertation-ch3
 
 ### 수동 설치
 
-1. [최신 릴리스](https://github.com/Creative781/writing-goals/releases)에서 `main.js`, `manifest.json`, `styles.css` 다운로드.
-2. 볼트 `.obsidian/plugins/` 아래 `writing-goals` 폴더 생성.
+1. [최신 릴리스](https://github.com/Creative781/easy-writing-goal/releases)에서 `main.js`, `manifest.json`, `styles.css` 다운로드.
+2. 볼트 `.obsidian/plugins/` 아래 `easy-writing-goal` 폴더 생성.
 3. 파일을 넣고 설정에서 플러그인 활성화.
 
 ### BRAT (베타)
 
 1. [BRAT 플러그인](https://github.com/TfTHacker/obsidian42-brat) 설치.
-2. 베타 플러그인: `https://github.com/Creative781/writing-goals`
+2. 베타 플러그인: `https://github.com/Creative781/easy-writing-goal`
 
 ## 개발
 
@@ -174,7 +174,7 @@ npm install
 npm run build
 ```
 
-`.obsidian/plugins/writing-goals/`에 복사 또는 심볼릭 링크 (`manifest.json`, `main.js`, `styles.css`).
+`.obsidian/plugins/easy-writing-goal/`에 복사 또는 심볼릭 링크 (`manifest.json`, `main.js`, `styles.css`).
 
 ## 라이선스
 
