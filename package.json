@@ -1,5 +1,5 @@
 {
-  "name": "easy-writing-goal",
+  "name": "writing-goals",
   "version": "0.1.9",
   "description": "Scrivener-style writing goals for Obsidian — project groups via frontmatter, session targets, and history.",
   "main": "main.js",
