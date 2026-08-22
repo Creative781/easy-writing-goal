@@ -1,7 +1,7 @@
 {
   "id": "easy-writing-goal",
   "name": "Easy Writing Goal",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "minAppVersion": "1.7.2",
   "description": "Scrivener-style writing goals across notes grouped by frontmatter. Track project totals, daily session targets, and history.",
   "author": "Creative781",

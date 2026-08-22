@@ -20,9 +20,6 @@ export class WritingGoalsSettingTab extends PluginSettingTab {
     containerEl.empty();
     containerEl.addClass("writing-goals-settings");
 
-    new Setting(containerEl).setName("Easy Writing Goal").setHeading();
-    new Setting(containerEl).setName("General").setHeading();
-
     new Setting(containerEl)
       .setName("Project property")
       .setDesc(
