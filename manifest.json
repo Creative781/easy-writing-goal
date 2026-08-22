@@ -1,0 +1,11 @@
+{
+  "id": "writing-goals",
+  "name": "Easy Writing Goal",
+  "version": "0.1.9",
+  "minAppVersion": "1.5.0",
+  "description": "Scrivener-style writing goals across notes grouped by frontmatter. Track project totals, daily session targets, and history.",
+  "author": "Creative781",
+  "authorUrl": "https://github.com/Creative781",
+  "fundingUrl": "https://www.buymeacoffee.com/creative781",
+  "isDesktopOnly": false
+}
