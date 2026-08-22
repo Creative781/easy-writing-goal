@@ -19,9 +19,9 @@ export class WritingGoalsSettingTab extends PluginSettingTab {
     const { containerEl } = this;
     containerEl.empty();
     containerEl.addClass("writing-goals-settings");
-    containerEl.createEl("h2", { text: "Easy Writing Goal" });
 
-    containerEl.createEl("h3", { text: "General" });
+    new Setting(containerEl).setName("Easy Writing Goal").setHeading();
+    new Setting(containerEl).setName("General").setHeading();
 
     new Setting(containerEl)
       .setName("Project property")
@@ -76,7 +76,7 @@ export class WritingGoalsSettingTab extends PluginSettingTab {
         })
       );
 
-    containerEl.createEl("h3", { text: "Status bar" });
+    new Setting(containerEl).setName("Status bar").setHeading();
 
     new Setting(containerEl)
       .setName("Show project progress")
@@ -100,7 +100,7 @@ export class WritingGoalsSettingTab extends PluginSettingTab {
 
     this.renderProjectsSection(containerEl);
 
-    containerEl.createEl("h3", { text: "How to use" });
+    new Setting(containerEl).setName("How to use").setHeading();
     containerEl.createEl("ol", undefined, (ol) => {
       ol.createEl("li", {
         text: "Create a project below, then add writing-project: <id> to notes.",
@@ -118,7 +118,7 @@ export class WritingGoalsSettingTab extends PluginSettingTab {
     const section = containerEl.createDiv({
       cls: "writing-goals-settings-projects",
     });
-    section.createEl("h3", { text: "Projects" });
+    new Setting(section).setName("Projects").setHeading();
 
     const toolbar = section.createDiv({ cls: "writing-goals-settings-toolbar" });
     const search = toolbar.createEl("input", {

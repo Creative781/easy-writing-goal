@@ -175,10 +175,6 @@ export default class WritingGoalsPlugin extends Plugin {
     );
   }
 
-  onunload(): void {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE_WRITING_GOALS);
-  }
-
   private async bootstrap(): Promise<void> {
     await this.service.rebuildIndex();
     // Ensure orphan frontmatter project ids exist as records
@@ -190,11 +186,8 @@ export default class WritingGoalsPlugin extends Plugin {
   }
 
   async loadSettings(): Promise<void> {
-    this.settings = Object.assign(
-      {},
-      DEFAULT_SETTINGS,
-      await this.loadData()
-    );
+    const data = (await this.loadData()) as Partial<PluginSettings> | null;
+    this.settings = Object.assign({}, DEFAULT_SETTINGS, data ?? {});
     // Deep-merge nested maps that assign would shallow-overwrite incorrectly if missing
     this.settings.projects = this.settings.projects ?? {};
     this.settings.snapshots = this.settings.snapshots ?? {};
@@ -286,6 +279,6 @@ export default class WritingGoalsPlugin extends Plugin {
       if (!leaf) leaf = workspace.getLeaf(true);
       await leaf.setViewState({ type: VIEW_TYPE_WRITING_GOALS, active: true });
     }
-    workspace.revealLeaf(leaf);
+    await workspace.revealLeaf(leaf);
   }
 }
